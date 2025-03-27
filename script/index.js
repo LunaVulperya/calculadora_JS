@@ -29,6 +29,9 @@ class Calculator{
         }
     }
 
+    btnPress(){
+        
+    }
 }
 
 // criando o objeto
@@ -41,7 +44,7 @@ let buttons = document.querySelectorAll(".btn");
 console.log("teste");
 
 
-
+// calculos
 let resultado = calc.sum(1,2);
 console.log(resultado);
 let resultado2 = calc.minus(1,2);
@@ -50,3 +53,8 @@ let resultado3 = calc.multiplication(1,2);
 console.log(resultado3);
 let resultado4 = calc.division(1,0);
 console.log(resultado4);
+
+
+for(let i=0;buttons.length > i; i++){
+    buttons[i].addEventListener('click', calc.btnPress);
+}
